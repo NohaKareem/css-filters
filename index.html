@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- image from https://unsplash.com/photos/NRQV-hBF10M -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <h1>Photo Editor</h1>
+    <div class="container">
+        <section id="editorSlidersGroup">
+            <h2 class="hidden">Editor sliders group</h2>
+            <section>
+                <!-- blur, opacity, gray scale -->
+                <h2 class="hidden">Filters container 1</h2>
+                <section class="editorSection">
+                    <h2 class="hidden">Filter sliders 1</h2>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">blur</h3>
+                        <input type="range" class="slider" id="blur" min="0" max="100" value="50">
+                        <p id="blurVal"></p>
+                    </section>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">opacity</h3>
+                        <input type="range" class="slider" id="opacity" min="0" max="100" value="50">
+                        <p id="opacityVal"></p>
+                    </section>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">gray scale</h3>
+                        <input type="range" class="slider" id="grayscale" min="0" max="100" value="50">
+                        <p id="grayscaleVal"></p>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <!-- brightness, contrast, saturate -->
+                <h2 class="hidden">Filters container 2</h2>
+                <section class="editorSection">
+                    <h2 class="hidden">Filter sliders 2</h2>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">brightness</h3>
+                        <input type="range" class="slider" id="brightness" min="0" max="100" value="50">
+                        <p id="brightnessVal"></p>
+                    </section>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">contrast</h3>
+                        <input type="range" class="slider" id="contrast" min="0" max="100" value="50">
+                        <p id="contrastVal"></p>
+                    </section>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">saturate</h3>
+                        <input type="range" class="slider" id="saturate" min="0" max="100" value="50">
+                        <p id="saturateVal"></p>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <!-- hue-rotate, sepia, invert -->
+                <h2 class="hidden">Filters container 3</h2>
+                <section class="editorSection">
+                    <h2 class="hidden">Filter sliders 3</h2>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">hue-rotation</h3>
+                        <input type="range" class="slider" id="hue-rotate" min="0" max="100" value="50">
+                        <p id="hue-rotateVal"></p>
+                    </section>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">sepia</h3>
+                        <input type="range" class="slider" id="sepia" min="0" max="100" value="50">
+                        <p id="sepiaVal"></p>
+                    </section>
+                    <section class="filterSection">
+                        <h3 class="rangeHeader">invert</h3>
+                        <input type="range" class="slider" id="invert" min="0" max="100" value="50">
+                        <p id="invertVal"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- set uploader for image files -->
+        <input id="imgUploader" type="file" accept="image/gif, image/png, image/jpg, image/jpeg">
+        <picture>
+            <img id="filterImage"
+                src="images/bailey-zindel-unsplash_v1i6di_c_scale,w_1200.jpg"
+                alt="Image of Yosemite Valley, US by Bailey Zindel - from Unsplash.com">
+        </picture>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

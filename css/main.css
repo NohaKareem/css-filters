@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.hidden {
+	display: none;
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
+	color: #484848;
+}
+
+img {
+	width: 70%;
+	height: auto;	
+}
+
+picture, img, #imgUploader {
+	margin: 0 auto;
+	display: block;
+	padding: 15px;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 40pt;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+picture, h1 {
+	text-align: center;
+}
+
+#editorSlidersGroup { 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.editorSection {
+	padding: 15px;
+}
+
+.filterSection {
+	display: grid;
+	grid-template-columns: 78px 1fr 60px;
+
+	/* set padding in case filter name wraps over 2 lines, for line spacing */
+	padding-top: 5px;
+}
+
+h3 {
+	font-weight: normal;
+	align-self: flex-start;
+}
